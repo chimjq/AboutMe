@@ -35,11 +35,13 @@
 		</main>
 		<script src="main.js"></script>
 		<script>
-			const data = fetch('data/profile.json')
-				 .then(r => r.json())
-				 .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
-
-			setTimeout(() => render(data), 600);
+			fetch('data/profile.json')
+				.then(r => r.json())
+				.then(data => setTimeout(() => render(data), 600))
+				.catch(() => {
+					document.getElementById('loading').textContent = 'Failed to load profile.json';
+				}
+			);
 		</script>
 	</body>
 </html>
