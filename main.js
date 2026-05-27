@@ -1,3 +1,7 @@
+function toggleView() {
+  const isPrint = document.body.classList.toggle('print-view');
+  document.getElementById('toggle-label').textContent = isPrint ? 'Web View' : 'Print View';
+}
 function render(data) {
 
   // Header
