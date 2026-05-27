@@ -36,104 +36,10 @@
 		</main>
 		<script src="main.js" defer>< script>
 		<script>
-    // ── DATA ──────────────────────────────────────────────────────────────────
-    // In production, replace this inline object with:
-    const data = {
-  "name": "CHIM JIA QI",
-  "tagline": "Software Engineer | Full-stack Development, System Design & Technical Leadership",
-  "contact": {
-    "email": "chimjq@hotmail.com",
-    "whatsapp": "+6011-2144 1368",
-    "linkedin": "linkedin.com/in/jia-qi-chim-0322b137b",
-    "location": "Penang, Malaysia"
-  },
-  "skills": [
-	  {
-		"category": "Languages",
-		"items": ["C#", "JavaScript", "SQL", "T-SQL", "LINQ", "HTML", "CSS", "Firebird SQL"]
-	  },
-	  {
-		"category": "Frontend",
-		"items": ["ASP.NET Web Forms", "Dynamic UI Rendering", "Real-Time UI Updates"]
-	  },
-	  {
-		"category": "Backend & Infra",
-		"items": ["ASP.NET Web Applications", "REST APIs", "HttpClient Streaming", "SQL Server", "IIS", "Power BI"]
-	  },
-	  {
-		"category": "Practices",
-		"items": ["Event-Driven Architecture", "System Integration", "Performance Optimization", "Thread Synchronization", "Concurrency in .NET", "Reporting Solutions", "E-Invoicing (UBL 2.1)", "Deployment Troubleshooting"]
-	  }
-	],
-  "education": [
-    {
-      "degree": "Bachelor of Science with Honours (Information Technology) major in Artificial Intelligence",
-      "institution": "University Utara Malaysia",
-      "period": "2017-2021",
-      "descriptions": [
-        "CGPA: 3.87",
-        "First Class Honours",
-        "Dean's List all semesters",
-        "Final project: Image Steganography"
-      ]
-    },
-	{
-      "degree": "Pre-University, Accounting",
-      "institution": "Chung Ling High School",
-      "period": "2015-2016",
-      "descriptions": [
-        "CGPA: 3.67",
-        "focus on Mathematics(M), Account, Economy"
-      ]
-    }
-  ],
-  "workingExperience": [
-    {
-      "title": "Senior Software Engineer",
-      "company": "CMS Logistics (M) Sdn Bhd",
-      "period": "2022 – Present",
-      "yearStart": "2022",
-      "descriptions": [
-        "Led end-to-end software development lifecycle activities including requirement gathering, solution design, development, testing, deployment, and production support.",
-        "Managed and mentored development teams while coordinating technical deliverables and project timelines.",
-        "Designed and developed scalable full-stack enterprise applications with maintainable and modular source code architecture.",
-        "Performed system engineering, server maintenance, deployment automation, and environment configuration for production systems.",
-        "Managed database design, optimization, troubleshooting, and administration to ensure system stability and performance.",
-		"Collaborated with cross-functional stakeholders to translate business requirements into reliable technical solutions.",
-		"Troubleshot complex production issues and implemented preventive improvements for operational reliability and system resilience."
-      ]
-    },
-    {
-      "title": "Associate Consultant",
-      "company": "Qynix Technologies Sdn Bhd",
-      "period": "2020 – 2022",
-      "yearStart": "2020",
-      "descriptions": [
-        "Acted as company-assigned technical consultant and delivery resource for client-facing and internal projects from initiation to completion.",
-        "Delivered on-site technical support and development as a Resident/On-site Developer, ensuring alignment with client environment, workflows, and deployment constraints.",
-        "Performed on-site data analysis and reporting support as a Data Analyst, assisting clients in extracting insights, validating datasets, and building reporting outputs.",
-        "Participated in system enhancements and continuous improvement initiatives based on client feedback and operational needs."
-      ]
-    }
-  ]
-};
-
-    // and host resume.json alongside index.html on GitHub Pages.
-
-    // ── RENDER ────────────────────────────────────────────────────────────────
-    
-
-    // ── INIT ──────────────────────────────────────────────────────────────────
-    // To load from an external JSON file on GitHub Pages, replace the line
-    // below with:
-    //
-    //   fetch('resume.json')
-    //     .then(r => r.json())
-    //     .then(render)
-    //     .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
-    //
-    // Then create resume.json in the same repo folder using the resumeData
-    // object above as your template.
+    const data = await fetch('data/profile.json')
+         .then(r => r.json())
+         .then(render)
+         .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
 
     setTimeout(() => render(data), 600); // slight delay to show loader
   </script>
