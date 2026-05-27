@@ -1,8 +1,9 @@
 {
   "name": "CHIM JIA QI",
-  "tagline": "Software Engineer | Full-stack Development, System Design & Technical Leadership",
+  "tagline": "Software Engineer |<br/>Full-stack Development, System Design & Technical Leadership",
   "contact": {
     "email": "chimjq@hotmail.com",
+    "github": "chimjq.github.io/AboutMe",
     "whatsapp": "+6011-2144 1368",
     "linkedin": "linkedin.com/in/jia-qi-chim-0322b137b",
     "location": "Penang, Malaysia"
@@ -61,7 +62,6 @@
         "Managed database design, optimization, troubleshooting, and administration to ensure system stability and performance.",
 		"Collaborated with cross-functional stakeholders to translate business requirements into reliable technical solutions.",
 		"Troubleshot complex production issues and implemented preventive improvements for operational reliability and system resilience."
-		""
       ]
     },
     {

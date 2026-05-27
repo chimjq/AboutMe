@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Resume</title>
+		<title>CJQ - Profile</title>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="styles.css"/>
 	</head>
@@ -21,26 +21,25 @@
 		</div>
 		<header id="header" style="display:none">
 			<div class="name-block">
-				<h1 id="full-name">Your <em>Name</em>
-				</h1>
+				<h1 id="full-name"></h1>
 				<p class="role" id="tagline"/>
 			</div>
 			<div class="contact-block" id="contact-block"/>
 		</header>
 		<main>
 			<aside id="sidebar" style="display:none">
-				<div class="skills-section" id="skills-section"/>
-				<div class="education-section" id="education-section"/>
+				<div class="skills-section" id="skills-section"></div>
+				<div class="education-section" id="education-section"></div>
 			</aside>
 			<section class="content" id="experience-section" style="display:none"/>
 		</main>
-		<script src="main.js" defer></script>
+		<script src="main.js"></script>
 		<script>
-    const data = fetch('data/profile.json')
-         .then(r => r.json())
-         .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
+			const data = fetch('data/profile.json')
+				 .then(r => r.json())
+				 .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
 
-    setTimeout(() => render(data), 600); // slight delay to show loader
-  </script>
+			setTimeout(() => render(data), 600);
+		</script>
 	</body>
 </html>

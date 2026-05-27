@@ -5,8 +5,8 @@ function toggleView() {
 function render(data) {
 
   // Header
-  document.getElementById('full-name').innerHTML = data.name;
-  document.getElementById('tagline').textContent = data.tagline || '';
+  document.getElementById('full-name').innerHTML = data.name
+  document.getElementById('tagline').innerHTML = data.tagline || '';
 
   const cb = document.getElementById('contact-block');
   if (data.contact) {
@@ -56,7 +56,7 @@ function render(data) {
 		  <ul class="desc-list">${(exp.descriptions || []).map(d => `<li>${d}</li>`).join('')}</ul>
 		</div>
 	  </div>`).join('');
-
+	  
   // Show everything
   document.getElementById('header').style.display = '';
   document.getElementById('sidebar').style.display = '';
@@ -74,4 +74,5 @@ function render(data) {
 	});
   }, { threshold: 0.1 });
   items.forEach(el => io.observe(el));
+  
 }
