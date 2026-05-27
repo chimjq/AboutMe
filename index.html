@@ -36,12 +36,22 @@
 		</main>
 		<script src="main.js" defer>< script>
 		<script>
-    const data = await fetch('data/profile.json')
-         .then(r => r.json())
-         .then(render)
-         .catch(err => { document.getElementById('loading').textContent = 'Failed to load resume.json'; });
+		async function loadData() {
+			try {
+				const res = await fetch('./data/profile.json');
+				if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    setTimeout(() => render(data), 600); // slight delay to show loader
+				const data = await res.json();
+				setTimeout(() => render(data), 600);
+
+			} catch (err) {
+				console.error(err);
+				document.getElementById('loading').textContent =
+				  'Failed to load profile data';
+			}
+		}
+
+		loadData();
   </script>
 	</body>
 </html>
