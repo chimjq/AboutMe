@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/projects/FullStackJsWebApp/.vs
+/projects/FullStackJsWebApp/appCode/node_modules
+/projects/FullStackJsWebApp/modules/.vscode
+/projects/FullStackJsWebApp/modules/node_modules
+/projects/FullStackJsWebApp/ecommerce.db
