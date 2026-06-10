@@ -15,15 +15,15 @@
 	  },
 	  {
 		"category": "Frontend",
-		"items": ["ASP.NET Web Forms", "Dynamic UI Rendering", "Real-Time UI Updates"]
+      "items": [ "Vue.js", "ASP.NET Web Forms", "Dynamic UI Rendering", "Real-Time UI Updates" ]
 	  },
 	  {
 		"category": "Backend & Infra",
-		"items": ["ASP.NET Web Applications", "REST APIs", "HttpClient Streaming", "SQL Server", "IIS", "Power BI"]
+      "items": [ "Node.js", "ASP.NET Web Applications", "REST APIs", "HttpClient Streaming", "SQL Server", "IIS", "Power BI" ]
 	  },
 	  {
 		"category": "Practices",
-		"items": ["Event-Driven Architecture", "System Integration", "Performance Optimization", "Thread Synchronization", "Concurrency in .NET", "Reporting Solutions", "E-Invoicing (UBL 2.1)", "Deployment Troubleshooting"]
+      "items": [ "Clean Code Architecture & Directory Layouts", "Event-Driven Architecture", "Performance Optimization & Reporting Solutions", "Concurrency & Asynchronous Programming in .NET", "E-Invoicing Compliance (UBL 2.1)", "Deployment & Technical Infrastructure Troubleshooting" ]
 	  }
 	],
   "education": [
@@ -60,8 +60,8 @@
         "Designed and developed scalable full-stack enterprise applications with maintainable and modular source code architecture.",
         "Performed system engineering, server maintenance, deployment automation, and environment configuration for production systems.",
         "Managed database design, optimization, troubleshooting, and administration to ensure system stability and performance.",
-		"Collaborated with cross-functional stakeholders to translate business requirements into reliable technical solutions.",
-		"Troubleshot complex production issues and implemented preventive improvements for operational reliability and system resilience."
+        "Collaborated with cross-functional stakeholders to translate business requirements into reliable technical solutions.",
+        "Troubleshot complex production issues and implemented preventive improvements for operational reliability and system resilience."
       ]
     },
     {
@@ -75,6 +75,14 @@
         "Performed on-site data analysis and reporting support as a Data Analyst, assisting clients in extracting insights, validating datasets, and building reporting outputs.",
         "Participated in system enhancements and continuous improvement initiatives based on client feedback and operational needs."
       ]
+    }
+  ],
+  "demoProject": [
+    {
+      "githubLink": "https://github.com/chimjq/AboutMe/tree/main/projects/FullStackJsWebApp",
+      "title": "FullStackJs Web Application",
+      "summary": "This is a demo project to proof the concept of fullstack JavaScript development. The build of project involving Vue.js with integration of Node.js and SQLite. The project is about a simple e-commerce platform with basic login and shopping functionality. Feel free to visit the link to preview the project!",
+      "skills": [ "Vue.js", "Node.js", "SQLite" ]
     }
   ]
 }
