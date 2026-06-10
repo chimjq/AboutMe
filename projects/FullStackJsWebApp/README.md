@@ -16,6 +16,7 @@ A modern, robust full-stack JavaScript web application built with a clear separa
 - **Package Manager:** npm
 
 ## 📁 Project Structure
+```text
 FullStackJsWebApp/
 ├── appCode/                # Backend application source code
 │   ├── config/                 # Database and environment configurations
