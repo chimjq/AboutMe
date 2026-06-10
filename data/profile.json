@@ -81,7 +81,7 @@
     {
       "githubLink": "https://github.com/chimjq/AboutMe/tree/main/projects/FullStackJsWebApp",
       "title": "FullStackJs Web Application",
-      "summary": "This is a demo project to proof the concept of fullstack JavaScript development. The build of project involving Vue.js with integration of Node.js and SQLite. The project is about a simple e-commerce platform with basic login and shopping functionality. Feel free to visit the link to preview the project!",
+      "summary": "This is a demo project to proof the concept of fullstack JavaScript development. The build of project involving Vue.js with integration of Node.js and SQLite. The project is about a simple e-commerce platform with basic login and shopping functionality. Feel free to preview the project source code through the link!",
       "skills": [ "Vue.js", "Node.js", "SQLite" ]
     }
   ]
