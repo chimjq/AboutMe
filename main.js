@@ -100,14 +100,18 @@ function initNavbar() {
 
 function toggleView() {
   const isPrint = document.body.classList.toggle('print-view');
-  document.getElementById('toggle-label').textContent = isPrint ? 'Web View' : 'Print View';
+	document.getElementById('toggle-label').textContent = isPrint ? 'Web View' : 'Print View';
+	const allSections = document.querySelectorAll('.tab-content');
   if(isPrint){
-	  const allSections = document.querySelectorAll('.tab-content');
 	  allSections.forEach(section => {
 		  if (section.innerHTML.length > 0)
 			  section.classList.add('active');
 		});
-  }else{
+  } else {
+	  allSections.forEach(section => {
+		  if (section.innerHTML.length > 0)
+			  section.classList.remove('active');
+	  });
 	  lazyLoadSection();
   }
 }
